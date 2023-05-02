@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=1280, user-scalable=no" />
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family: 'BMDOHYEON';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff')
+          format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+      * {
+        font-family: 'BMDOHYEON';
+        color: black;
+        box-sizing: border-box;
+      }
+      html {
+        height: 100%;
+      }
+      body {
+        height: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+        font-size: 3vw;
+      }
+
+      p,
+      h1,
+      h2 {
+        margin: 0;
+        padding: 0;
+        white-space: nowrap;
+      }
+
+      #container {
+        display: flex;
+        width: 100vw;
+        height: 56.25vw;
+        max-height: 100vh;
+        max-width: 177.78vh;
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      #iframeWrap {
+        width: 70%;
+        height: 100%;
+        position: relative;
+      }
+
+      #viewer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 90%;
+        height: 90%;
+        transform: translate(-50%, -50%);
+        /* border: 3px solid black; */
+        border: 0;
+      }
+
+      #contents {
+        padding: 3vw 2vw 3vw 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30%;
+      }
+
+      #btnWrap {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1.5vw;
+      }
+
+      .btn {
+        padding: 10px 0;
+        width: 80%;
+        background-color: #fff;
+        font-size: 50%;
+        font-weight: bold;
+        border: 3px solid #000;
+        cursor: pointer;
+      }
+
+      .btn.is-active {
+        background-color: #f17723;
+        border-color: #f17723;
+        color: #fff;
+      }
+
+      h1,
+      h2 {
+        margin-bottom: 15px;
+        text-align: right;
+      }
+
+      h1 {
+        font-size: 100%;
+      }
+
+      h2 {
+        font-size: 60%;
+      }
+
+      p {
+        font-size: 45%;
+        line-height: 1.7;
+      }
+    </style>
+  </head>
+  <script src="./js/script.js"></script>
+  <body>
+    <div id="container">
+      <div id="iframeWrap">
+        <!-- <iframe id="viewer" src="http://192.168.0.7:8080/"></iframe> -->
+        <iframe id="viewer" src="./viewer/index.html"></iframe>
+      </div>
+      <div id="contents">
+        <div>
+          <div id="section1">
+            <h1>목조 고건축 구조</h1>
+            <h2>맞배지붕 구조의 고건축 구조</h2>
+          </div>
+
+          <div id="section2">
+            <p>
+              맞배지붕은 우리나라의 가장 대표적인<br />
+              지붕형태로써, 측면이 단절되어 있고,<br />
+              박공으로 마무리 되어 있으며, 측면부분<br />
+              은 삼각형의 벽을 갖고 있습니다.
+            </p>
+          </div>
+        </div>
+
+        <div id="btnWrap">
+          <button class="btn" id="btn_1">지붕부</button>
+          <button class="btn" id="btn_2">공포부</button>
+          <button class="btn" id="btn_3">벽체부</button>
+          <button class="btn" id="btn_4">기단</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
