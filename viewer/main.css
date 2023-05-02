@@ -1,0 +1,327 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100vh;
+  font-family: 'Poppins';
+}
+
+.webgl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+}
+
+div {
+  pointer-events: none;
+}
+
+.textBox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+[class*='textBox__'] {
+  position: fixed;
+}
+
+[class*='textBox__'] p,
+[class*='textBox__'] span {
+  padding: 2px 2px 0;
+
+  background-color: yellow;
+}
+
+[class*='textBox__'] p {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 2vw;
+  font-weight: 800;
+  line-height: 1;
+}
+
+[class*='textBox__'] span {
+  display: block;
+  position: relative;
+  padding-left: 15px;
+  font-size: 1.8vw;
+  font-weight: 500;
+}
+[class*='textBox__'] span::before {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 1px;
+  top: 15px;
+  left: 5px;
+  background-color: #000;
+}
+
+[class*='textBox__']::after,
+[class*='textBox__']::before {
+  content: '';
+  position: fixed;
+}
+
+[class*='textBox__']::after {
+  width: 2vh;
+  height: 2vh;
+  border-radius: 50%;
+  background-color: orange;
+}
+
+[class*='textBox__']::before {
+  border-top: 2px solid orange;
+  border-left: 2px solid orange;
+}
+
+/* 용마루 */
+.textBox__1_1 {
+  top: 7vh;
+  right: 6vw;
+}
+
+.textBox__1_1::before {
+  width: 6vw;
+  height: 5vh;
+  top: 10vh;
+  right: 36.2vw;
+}
+
+.textBox__1_1::after {
+  top: 15vh;
+  right: 41.5vw;
+}
+
+/* 박공널 */
+.textBox__1_2 {
+  top: 8vh;
+  left: 23.5vw;
+}
+
+.textBox__1_2::before {
+  width: 1vw;
+  height: 22vh;
+  top: 11vh;
+  left: 20.6vw;
+}
+.textBox__1_2::after {
+  left: 20vw;
+  top: 32.5vh;
+}
+
+/* 내림마루 */
+.textBox__1_3 {
+  top: 25vh;
+  left: 47.5vw;
+}
+.textBox__1_3::before {
+  top: 28vh;
+  left: 40.6vw;
+  width: 5vw;
+  height: 4vh;
+}
+.textBox__1_3::after {
+  left: 40vw;
+}
+
+/* 너새 */
+.textBox__1_4 {
+  top: 43vh;
+  left: 42vw;
+}
+
+.textBox__1_4::before {
+  width: 8vw;
+  height: 13.5vh;
+  left: 32vw;
+  top: 32.3vh;
+  border-bottom: 2px solid orange;
+  border-top: 0;
+}
+
+.textBox__1_4::after {
+  top: 31vh;
+  left: 31.4vw;
+}
+
+/* 방풍널 */
+.textBox__1_5 {
+  left: 34vw;
+  bottom: 42vh;
+}
+.textBox__1_5::before {
+  width: 5vw;
+  height: 9vh;
+  left: 27.5vw;
+  bottom: 44.5vh;
+  border-bottom: 2px solid orange;
+  border-top: 0;
+}
+.textBox__1_5::after {
+  bottom: 53vh;
+  left: 26.9vw;
+}
+
+.textBox__2_1 {
+  top: 3vh;
+  right: 10vw;
+}
+
+.textBox__2_1::before {
+  width: 8vw;
+  height: 15vh;
+  left: 39vw;
+  top: 6vh;
+}
+
+.textBox__2_1::after {
+  top: 20vh;
+  left: 38.4vw;
+}
+
+.textBox__2_2 {
+  top: 38vh;
+  left: 41vw;
+}
+
+.textBox__2_2::before {
+  width: 9vh;
+  height: 8vw;
+  top: 31vh;
+  left: 31.8vw;
+  border-bottom: 2px solid orange;
+  border-top: 0;
+}
+
+.textBox__2_2::after {
+  top: 29vh;
+  left: 31.1vw;
+}
+
+/* 우주(귀기둥) */
+.textBox__3_1 {
+  top: 15.6vh;
+  right: 19vw;
+}
+
+.textBox__3_1::before {
+  width: 4vw;
+  height: 26vh;
+  top: 20.2vh;
+  right: 13vw;
+  border-bottom: 2px solid orange;
+  border-left: 0;
+  border-right: 2px solid orange;
+}
+
+.textBox__3_1::after {
+  top: 45.5vh;
+  right: 16.34vw;
+}
+
+/* 토벽 */
+.textBox__3_2 {
+  top: 26vh;
+  left: 27.4vw;
+}
+
+.textBox__3_2::before {
+  width: 2vw;
+  height: 19vh;
+  top: 29vh;
+  left: 23.5vw;
+  border-bottom: 2px solid orange;
+}
+
+.textBox__3_2::after {
+  top: 47.5vh;
+  left: 25.5vw;
+}
+
+/* 평주(외진주) */
+.textBox__3_3 {
+  top: 50vh;
+  left: 27vw;
+}
+
+.textBox__3_3::before {
+  width: 8vw;
+  right: 28vw;
+  bottom: 43.7vh;
+}
+
+.textBox__3_3::after {
+  bottom: 43vh;
+  right: 26.5vw;
+}
+
+/* 고주(내진주) */
+.textBox__3_4 {
+  bottom: 19.5vh;
+  left: 57.2vw;
+}
+
+.textBox__3_4::before {
+  width: 6vw;
+  height: 8vw;
+  left: 49.7vw;
+  bottom: 22vh;
+  border-bottom: 2px solid orange;
+  border-top: 0;
+}
+
+.textBox__3_4::after {
+  bottom: 31vh;
+  left: 49.1vw;
+}
+
+/* 초석 */
+.textBox__3_5 {
+  bottom: 9.5vh;
+  left: 46vw;
+}
+
+.textBox__3_5::before {
+  width: 7vh;
+  height: 4vw;
+  left: 38.5vw;
+  bottom: 12vh;
+  border-bottom: 2px solid orange;
+  border-top: 0;
+}
+
+.textBox__3_5::after {
+  bottom: 16vh;
+  left: 38vw;
+}
+
+/* 기단 */
+.textBox__4_1 {
+  bottom: 35vh;
+  right: 13vw;
+}
+
+.textBox__4_1::before {
+  width: 7vw;
+  height: 12vh;
+  left: 45.5vw;
+  bottom: 26vh;
+}
+
+.textBox__4_1::after {
+  left: 44.9vw;
+  bottom: 25vh;
+}
+
+
+/*# sourceMappingURL=main.css.map*/
